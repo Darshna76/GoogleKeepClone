@@ -25,20 +25,20 @@ function Notes(props) {
 
   return (
     <div className="note" style={noteStyle}>
-      <div className="noteData">
-        <p style={{ fontSize: "1.5rem" }}>{props.title}</p>
-        <p>{props.content}</p>
+    <div className="noteData">
+      <p style={{fontSize:""}}>{props.title}</p>
+      <p>{props.content}</p>
       </div>
       <div className="icons">
-        <Fab size="small" onClick={handleClick}>
-          <FontAwesomeIcon icon={faTrash} size="1.5x" color="black" />
-        </Fab>
+      <Fab size = "small" onClick={handleClick}>
+        <FontAwesomeIcon icon={faTrash} size="1.5x" color="black" />
+      </Fab>
 
-
-        <ColorPicker
-          selectedColor={props.color || "#ffffff"}
-          onSelectColor={(color) => props.onSelectColor(color)}
-        />
+   
+      <ColorPicker
+        selectedColor={props.color || "#ffffff"}
+        onSelectColor={(color) => props.onSelectColor(color)}
+      />
       </div>
     </div>
   );

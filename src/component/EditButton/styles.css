@@ -22,12 +22,27 @@
 }
 
 .editIcon {
-    position: absolute;
-    top: 16.5rem;
-    left: -12rem;
+    position: fixed;
+    
+    left: -45px;
+   
+    
+
+    
+    
     /* padding-right: 1rem; */
 
 
+}
+@media (max-width: 465px) {
+    .editIcon {
+        position: fixed;
+    
+        
+       
+        top: -5rem; 
+        left: 5rem;
+    }
 }
 
 .edit button {
