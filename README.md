@@ -36,5 +36,5 @@ Include screenshots or gifs showcasing your app.
 4. Delete notes by clicking the delete button.
 
 ## Deployment
-The app is deployed on Netlify and can be accessed here
+The app is deployed on vercel and can be accessed here-[Google-Keep_Clone](https://google-keep-clone-weld.vercel.app/)
 
