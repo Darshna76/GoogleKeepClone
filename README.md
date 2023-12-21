@@ -20,6 +20,7 @@ The Google Keep Clone allows users to create, edit, and delete notes. Each note 
 
 
 ## Deployment
+The app is deployed on Netlify and can be accessed here
 
 The app is deployed on verce and can be accessed here
 -[Google-Keep_Clone](https://google-keep-clone-weld.vercel.app/)
