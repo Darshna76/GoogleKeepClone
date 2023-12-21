@@ -5,16 +5,16 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import './styles.css'
 
 function InputField(props) {
-  // Declare state variable for expanding input component
+
   const [isExpanded, setExpanded] = useState(false);
 
-  // Declare state variable for note entered by user
+
   const [note, setNote] = useState({
     title: "",
     content: ""
   });
 
-  // Update note to user input 
+
   function handleChange(event) {
     const { name, value } = event.target;
 
@@ -26,7 +26,7 @@ function InputField(props) {
     });
   }
 
-  // Submit note entered by user
+
   function submitNote(event) {
     props.onAdd(note);
     setNote({
@@ -36,7 +36,7 @@ function InputField(props) {
     event.preventDefault();
   }
 
-  // Expand note card
+
   function expand() {
     setExpanded(true);
   }
@@ -44,7 +44,7 @@ function InputField(props) {
   return (
     <div>
       <form className="create-note" autoComplete="off">
-       
+
         {isExpanded && (
           <input
             name="title"
@@ -61,14 +61,14 @@ function InputField(props) {
           value={note.content}
           placeholder="Take a note..."
           rows={isExpanded ? 2 : 1}
-          
-            style={isExpanded ?  {}: {borderTop: "2px solid black"} }
-          
+
+          style={isExpanded ? {} : { borderTop: "2px solid black" }}
+
 
         />
         <Zoom in={isExpanded}>
-          <Fab onClick={submitNote} style = {{position:"absolute",top:"7.3rem"}}>
-          <FontAwesomeIcon icon={faPlus} size="2x" color="black"  />
+          <Fab onClick={submitNote} style={{ position: "absolute", top: "7.3rem" }}>
+            <FontAwesomeIcon icon={faPlus} size="2x" color="black" />
           </Fab>
         </Zoom>
       </form>
