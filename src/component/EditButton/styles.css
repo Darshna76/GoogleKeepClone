@@ -1,0 +1,64 @@
+/* .edit {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black; 
+    padding: 2rem;
+    position: absolute;
+    
+    
+   
+} */
+
+.edit{
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  padding: 2rem;
+  background-color: white; /* Set the background color */
+  z-index: 20000; /* Ensure it's above other elements */
+  box-shadow: 1px 1px 12px 1px rgba(0, 0, .2);
+  border-radius: 10px;
+  
+}
+
+
+
+  
+
+.edit input {
+    border: 1px solid black;
+    width: 179px;
+    margin-bottom: 1rem;
+}
+
+.editIcon {
+    position: absolute;
+    top: 16.5rem;
+    left: -12rem;
+    /* padding-right: 1rem; */
+   
+
+} 
+
+.edit button {
+    color: black;
+    padding: 0.6rem 2.3rem;
+    background-color: rgb(184, 181, 181);
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    box-shadow: 1px 1px 11px 1px rgb(184, 181, 181);
+
+}
+.edit button:hover{
+    /* color: black; */
+    padding: 0.8rem 2.5rem;
+    
+    /* background-color: ; */
+    
+}
+/* style = {{position:"absolute",top:"10rem"}} */

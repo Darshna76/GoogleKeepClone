@@ -1,0 +1,40 @@
+.create-note {
+ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    border-radius: 10px;
+    
+}
+
+input  {
+  width: 55%;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  border-left: 2px solid black;
+  border-right:2px solid black ;
+  border-top:2px solid black;
+  font-weight: 700;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
+
+textarea {
+    width: 55%;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right:2px solid black ;
+     border-radius: 10px;
+     /* font-weight: 700; */
+     font-size: 1.1rem;
+     
+  
+}
+
